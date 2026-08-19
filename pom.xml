@@ -33,8 +33,37 @@
 			<timezone>+8</timezone>
 		</developer>
 	</developers>
-
-	<distributionManagement>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<commons-io.version>2.18.0</commons-io.version>
+		<junit.version>4.13.2</junit.version>
+		<servlet-api.version>3.0.1</servlet-api.version>
+		<slf4j.version>1.7.21</slf4j.version>
+	        <java.version>1.8</java.version>
+    </properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+	</dependencies>
+    <!-- 制品发布仓库配置（distributionManagement） -->
+    <distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
 			<name>Maven Snapshots Repository</name>
@@ -46,18 +75,8 @@
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
-	
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<commons-io.version>2.18.0</commons-io.version>
-		<junit.version>4.13.2</junit.version>
-		<servlet-api.version>3.0.1</servlet-api.version>
-		<slf4j.version>1.7.21</slf4j.version>
-	        <java.version>1.8</java.version>
-    </properties>
-
-	<build>
+    <!-- 构建配置（Build） -->
+    <build>
 		<pluginManagement>
 			<plugins>
 				<!-- 编译插件：编译主代码至主输出目录 -->
@@ -274,24 +293,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>${commons-io.version}</version>
-		</dependency>
-	</dependencies>
-
 </project>
