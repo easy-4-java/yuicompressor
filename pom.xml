@@ -33,14 +33,18 @@
         </developer>
     </developers>
     <properties>
+        <!-- ═══ 第一段: 基础属性（自然排序）═══ -->
+        <java.version>21</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.version>4.0.0-rc-5</maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- Dependency versions -->
         <commons-io.version>2.18.0</commons-io.version>
         <junit.version>4.13.2</junit.version>
         <servlet-api.version>3.0.1</servlet-api.version>
         <slf4j.version>1.7.21</slf4j.version>
-        <java.version>21</java.version>
+        <!-- Maven Plugin versions -->
     </properties>
     <dependencies>
         <dependency>
