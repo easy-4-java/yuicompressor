@@ -71,6 +71,8 @@
 						<source>8</source>
 						<!-- 目标平台编译版本 -->
 						<target>8</target>
+                    <release>${java.version}</release>
+                    <!-- 编译时使用 Java ${java.version} 的标准 API -->
 						<!-- 字符集编码 -->
 						<encoding>${project.build.sourceEncoding}</encoding>
 						<!-- -->
