@@ -50,8 +50,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<commons-io.version>2.5</commons-io.version>
-		<junit.version>4.12</junit.version>
+		<commons-io.version>2.18.0</commons-io.version>
+		<junit.version>4.13.2</junit.version>
 		<servlet-api.version>3.0.1</servlet-api.version>
 		<slf4j.version>1.7.21</slf4j.version>
 	</properties>
@@ -68,9 +68,9 @@
 					<configuration>
 						<defaultLibBundleDir>lib</defaultLibBundleDir>
 						<!-- 源代码编译版本 -->
-						<source>1.6</source>
+						<source>8</source>
 						<!-- 目标平台编译版本 -->
-						<target>1.6</target>
+						<target>8</target>
 						<!-- 字符集编码 -->
 						<encoding>${project.build.sourceEncoding}</encoding>
 						<!-- -->
