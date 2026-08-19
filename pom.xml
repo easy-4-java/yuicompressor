@@ -68,10 +68,6 @@
 					<!-- 设置源文件编码方式 -->
 					<configuration>
 						<defaultLibBundleDir>lib</defaultLibBundleDir>
-						<!-- 源代码编译版本 -->
-						<source>8</source>
-						<!-- 目标平台编译版本 -->
-						<target>8</target>
 						<!-- 字符集编码 -->
 						<encoding>${project.build.sourceEncoding}</encoding>
 						<!-- -->
